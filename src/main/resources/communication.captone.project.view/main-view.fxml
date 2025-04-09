@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="communication.captone.project.view.MainView">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.farmingdale.comunication.capstone.project.viewModel.MainViewController">
    <children>
       <BorderPane layoutX="2.0" layoutY="1.0" prefHeight="600.0" prefWidth="800.0">
          <top>
