@@ -59,6 +59,12 @@
             <artifactId>azure-identity</artifactId>
         </dependency>
 
+        <!-- Azure Blob Storage -->
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-storage-blob</artifactId>
+        </dependency>
+
         <!-- Azure Cosmos DB -->
         <dependency>
             <groupId>com.azure</groupId>
@@ -83,17 +89,17 @@
             <artifactId>client-sdk</artifactId>
             <version>1.25.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.32</version> <!-- Ensure you use the appropriate version -->
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.6</version>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
         </dependency>
     </dependencies>
+
+
+
 
     <build>
         <plugins>

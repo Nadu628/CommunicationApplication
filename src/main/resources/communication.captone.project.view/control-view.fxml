@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="communication.captone.project.view.ControlView"
+            fx:controller="edu.farmingdale.comunication.capstone.project.viewModel.ControlViewController"
             prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>
