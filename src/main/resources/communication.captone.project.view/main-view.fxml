@@ -36,69 +36,147 @@
          <center>
             <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <ScrollPane fx:id="communicationScrollPane" prefHeight="353.0" prefWidth="800.0">
+                  <ScrollPane fx:id="communicationScrollPane" prefHeight="369.0" prefWidth="800.0">
                      <content>
-                        <TilePane fx:id="communicationTilePane" hgap="5.0" prefHeight="400.0" prefWidth="800.0" vgap="5.0" />
+                        <TilePane fx:id="communicationTilePane" hgap="5.0" prefHeight="315.0" prefWidth="797.0" vgap="5.0" />
                      </content>
                   </ScrollPane>
                </children>
             </StackPane>
          </center>
          <bottom>
-            <Pane fx:id="functionsPane" prefHeight="104.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <StackPane prefHeight="164.0" prefWidth="800.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label layoutX="41.0" layoutY="81.0" text="Categories">
-                     <font>
-                        <Font name="Monospaced Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="185.0" layoutY="83.0" text="Favorites">
-                     <font>
-                        <Font name="Monospaced Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="336.0" layoutY="83.0" text="Keyboard">
-                     <font>
-                        <Font name="Monospaced Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="475.0" layoutY="83.0" text="Quick Access">
-                     <font>
-                        <Font name="Monospaced Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="650.0" layoutY="81.0" text="Settings">
-                     <font>
-                        <Font name="Monospaced Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="41.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../OneDrive/Pictures/UChattinApplication/categories-icon.jpeg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="181.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../OneDrive/Pictures/UChattinApplication/favorites-icon.jpeg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="328.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../OneDrive/Pictures/UChattinApplication/keyboard-icon.jpeg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="482.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../OneDrive/Pictures/UChattinApplication/quick-access-icon.jpeg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="642.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../OneDrive/Pictures/UChattinApplication/settings-icon.jpeg" />
-                     </image>
-                  </ImageView>
+                  <TilePane fx:id="mainCategoriesTilePane" hgap="15.0" prefHeight="164.0" prefWidth="800.0" vgap="5.0" visible="false">
+                     <children>
+                        <ImageView fx:id="emotionsIV" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/emotions-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="foodIV" fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/food-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="shapesAndColorsIV" fitHeight="100.0" fitWidth="100.0" layoutX="115.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/colors-and-shapes-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="pronounsIV" fitHeight="100.0" fitWidth="100.0" layoutX="220.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/pronouns-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="accessibilityIV" fitHeight="100.0" fitWidth="100.0" layoutX="325.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/accessibility-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="animalsIV" fitHeight="100.0" fitWidth="100.0" layoutX="430.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/animals-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="hobbiesIV" fitHeight="100.0" fitWidth="100.0" layoutX="640.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/hobbies-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="placesIV" fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/places-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="safetyIV" fitHeight="100.0" fitWidth="100.0" layoutX="115.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/safety-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="selfAdvocacyIV" fitHeight="100.0" fitWidth="100.0" layoutX="220.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/self-advocacy-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="transportationIV" fitHeight="100.0" fitWidth="100.0" layoutX="325.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/transportation-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="weatherIV" fitHeight="100.0" fitWidth="100.0" layoutX="430.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/weather-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="socialConnectionsIV" fitHeight="100.0" fitWidth="100.0" layoutX="535.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/social-connections-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="dailyActivitiesIV" fitHeight="100.0" fitWidth="100.0" layoutX="535.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/daily-activities-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </TilePane>
+                  <Pane fx:id="directoryPane" prefHeight="181.0" prefWidth="800.0">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/categories-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="190.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/favorites-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="366.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/keyboard-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="542.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/quick-access-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="696.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagesIcon/settings-icon.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="20.0" layoutY="119.0" text="Categories">
+                           <font>
+                              <Font name="Monospaced Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="200.0" layoutY="119.0" text="Favorites">
+                           <font>
+                              <Font name="Monospaced Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="380.0" layoutY="119.0" text="Keyboard">
+                           <font>
+                              <Font name="Monospaced Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="540.0" layoutY="119.0" text="Quick Access">
+                           <font>
+                              <Font name="Monospaced Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="710.0" layoutY="119.0" text="Settings">
+                           <font>
+                              <Font name="Monospaced Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
                </children>
-            </Pane>
+            </StackPane>
          </bottom>
       </BorderPane>
    </children>
