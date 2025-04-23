@@ -16,7 +16,7 @@
    <children>
       <StackPane fx:id="LoginScreenStackPane" prefHeight="400.0" prefWidth="600.0">
          <children>
-            <Pane fx:id="createAvatarPane" prefHeight="345.0" prefWidth="600.0">
+            <Pane fx:id="createAvatarPane" prefHeight="345.0" prefWidth="600.0" visible="false">
                <children>
                   <SplitPane dividerPositions="0.3862876254180602" layoutY="-1.0" prefHeight="317.0" prefWidth="600.0">
                     <items>
@@ -105,7 +105,7 @@
                         <Font name="Monospaced Regular" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="360.0" text="Create Password:">
+                  <Label layoutX="49.0" layoutY="360.0" text="Create Password:">
                      <font>
                         <Font name="Monospaced Regular" size="14.0" />
                      </font>
@@ -238,7 +238,7 @@
                   </Button>
                </children>
             </Pane>
-            <Pane fx:id="LoginScreenPane" prefHeight="400.0" prefWidth="469.0" visible="false">
+            <Pane fx:id="LoginScreenPane" prefHeight="400.0" prefWidth="469.0">
                <children>
                   <Label layoutX="113.0" layoutY="14.0" text="Welcome to UChattin">
                      <font>
